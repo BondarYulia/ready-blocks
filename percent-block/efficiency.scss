@@ -1,0 +1,247 @@
+.efficiency {
+   padding: 75px 0;
+
+   
+   @include r(1219) {
+      padding: 60px 0;
+   }
+
+   .highlight {
+      color: red;
+    }
+
+   &__title {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+
+      @include r(1023) {
+         margin-bottom: 30px;
+      }
+
+      @include r(639) {
+         margin-bottom: 20px;
+      }
+
+      br {
+         @include r(479) {
+            display: none;
+         }
+      }
+   }
+
+   .medal-wrap {
+      img {
+        
+      @include rm(1220) {
+   
+         max-height: 115px;
+      height: 115px;
+      }
+      }
+      
+   }
+
+   .rev1__medals {
+      margin-bottom: 0;
+   }
+
+   &__subtitle {
+      max-width: 870px;
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      color: #444444;
+      font-size: 23px;
+      font-weight: 500;
+      line-height: 1.4;
+
+      @include r(1023) {
+         margin-bottom: 30px;
+      }
+      @include r(639) {
+         font-size: 21px;
+      }
+   }
+
+   &__stats {
+      margin-bottom: 45px;
+
+      @include r(1023) {
+         margin-bottom: 25px;
+      }
+   }
+
+   &__footnote {
+      display: block;
+      margin-bottom: 50px;
+      text-align: center;
+      color: #666666;
+      font-family: Roboto;
+      font-size: 17px;
+      font-style: italic;
+      line-height: 1.4;
+   }
+
+   &__certs {}
+}
+
+.efficiency-stats {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: center;
+   margin-left: -15px;
+   margin-right: -15px;
+
+   @include r(1023) {
+      margin-left: -10px;
+      margin-right: -10px;
+   }
+
+   &__content {
+      max-width: 322px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   &__stat {
+      width: calc(33.333333333% - 30px);
+      padding: 0 15px;
+      text-align: center;
+
+      &--center {
+         position: relative;
+
+         &::before,
+         &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 150px;
+            background-color: #dfdfdf;
+         }
+
+         &::before {
+            left: 10px;
+         }
+
+         &::after {
+            right: 0;
+         }
+
+         @include r(1023) {
+
+            &::before,
+            &::after {
+               display: none;
+            }
+         }
+      }
+
+      @include r(1023) {
+         width: calc(50% - 20px);
+         padding: 0 10px;
+         margin-bottom: 20px;
+      }
+
+      @include r(639) {
+         width: 100%;
+         padding: 0 10px;
+         margin-bottom: 20px;
+      }
+   }
+
+   &__num {
+      margin-bottom: 27px;
+      color: #859b28;
+      font-family: Roboto;
+      font-size: 100px;
+      font-weight: 700;
+
+      @include r(1023) {
+         margin-bottom: 0;
+      }
+
+      @include r(767) {
+         font-size: 90px;
+      }
+   }
+
+   &__descr {
+      max-width: 332px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+
+      @include r(1219) {
+         font-size: 17px;
+      }
+
+   }
+}
+
+.efficiency-certs {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 13px;
+
+   &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/tumba.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      width: 570px;
+      height: 20px;
+   }
+
+   &__cert {
+      position: relative;
+      z-index: 1;
+
+      &:not(:last-child) {
+         margin-right: 50px;
+      }
+
+      @include r(639) {
+         width: 90px;
+         &:not(:last-child) {
+            margin-right: 20px;
+         }
+      }
+      @include r(479) {
+
+      }
+   }
+   @include r(639) {
+      &::before {
+         background-size: contain;
+         width: 400px;
+      }
+   }
+   @include r(479) {
+      &::before {
+         display: none;
+      }     
+   }
+}
+
+@include r(639) {
+   .efficiency__footnote {
+      margin-bottom: 30px;
+      margin-top: -20px;
+   }
+}

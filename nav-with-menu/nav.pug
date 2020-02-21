@@ -1,0 +1,55 @@
+section.nav
+    .container
+        .nav__menu
+            img(src="./img/menu.png", alt="menu")
+        .nav__menu-open
+            .nav__menu-bg
+            .nav__menu-open-content
+                .close
+                    img(src="./img/close.png", alt="X")
+                img.menu-logo(src="./img/logo.png", alt="logo")
+                ul.nav__list
+                    li.nav__list--li
+                        a.close-menu(href="#")
+                            include ../svg/nav1.html
+                            p
+                                span Натуральный 
+                                span состав
+                    li.nav__list--li
+                        a.close-menu(href="#")
+                            include ../svg/nav2.html
+                            p
+                                span Без побочных 
+                                span эффектов
+                    li.nav__list--li
+                        a.close-menu(href="#")
+                            include ../svg/nav3.html
+                            p.third
+                                span Рекомендован 
+                                span врачами-наркологами
+                .nav__btn
+                    button.btn.nav__btn--btn.ever-popup-btn Заказать звонок
+        .nav__logo
+            img(src="./img/logo.png", alt="logo")
+            span.nav__logo--span Капли от курения
+        ul.nav__list.desktop
+            li.nav__list--li
+                a(href="#")
+                    include ../svg/nav1.html
+                    p
+                        span Натуральный 
+                        span состав
+            li.nav__list--li
+                a(href="#")
+                    include ../svg/nav2.html
+                    p
+                        span Без побочных 
+                        span эффектов
+            li.nav__list--li
+                a(href="#")
+                    include ../svg/nav3.html
+                    p.third
+                        span Рекомендован 
+                        span врачами-наркологами
+        .nav__btn
+            button.btn.nav__btn--btn.ever-popup-btn Заказать звонок

@@ -1,0 +1,70 @@
+section.block.promo.bg-block.promo-top
+    .container
+        .promo__bullets
+            h2.title Product
+            p.subtitle-big Приведите давление в&nbsp;норму и укрепите сердечно-сосудистую систему
+            ul.promo__bullets--ul
+                li
+                    img.bullet-img(src="img/tick.png", alt="bullet")
+                    p 
+                        span.black устраняет 
+                        | причины повышенного давления
+                li
+                    img.bullet-img(src="img/tick.png", alt="bullet")
+                    p 
+                        span.black эффективно 
+                        | укрепляет стенки сосудов
+                li
+                    img.bullet-img(src="img/tick.png", alt="bullet")
+                    p 
+                        span.black минимизирует  
+                        | риск развития инсульта и&nbsp;инфаркта 
+            img.promo__bullets--sert(src="img/promo-sert.png", alt="sertificates")
+        .promo__img
+            img.promo__img--pack(src="img/pack.png", alt="pack")
+            img.promo__img--medal(src="img/natural.png", alt="natural")
+        img.promo__img--back(src="img/bg1.png", alt="back")
+        img.promo__img--back.on1219(src="img/bg1-1219.png", alt="back")
+        .promo__form
+            form.x_order_form(action="/submit", method="post")
+                .promo__form--sale
+                    span -50%
+                    img(src="img/sale.png", alt="sale")
+                p.attention Успейте заказать со скидкой до&nbsp;
+                    span.date-0
+                .promo__form--prices
+                    .price.old
+                        span.price-name Старая цена
+                        p.price-value
+                            span.x_price_previous 1980
+                            span.x_currency ฿
+                    .line
+
+                    .price.new
+                        span.price-name Новая цена
+                        p.price-value
+                        
+                            span.x_price_current 990
+                            span.x_currency ฿
+                .input-wrap.name           
+                    input.input-field(type="text", name="name", required, placeholder="Мое имя")
+                .input-wrap.phone
+                    input.input-field(type="tel", name="phone", required, placeholder="Мой телефон")
+                button.btn Заказать
+                //- span.snos *При оформлении заказа
+            .online-block
+                .online-people
+                    img(src="img/eye.png", alt="online")
+                    p Сейчас на сайте 
+                        span.text-bold.online-dynamic 20
+                        | &nbsp;человек
+                .online-sold
+                    img(src="img/eye.png", alt="online")
+                    p 
+                        span.text-bold 116 
+                        | продаж за последний час
+            .pack-left
+                | Внимание! Осталось 
+                span.highlight.lastpack 80
+                | &nbsp;упаковок
+

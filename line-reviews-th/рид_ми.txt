@@ -1,0 +1,13 @@
+≈сли в слайдер добавитс€ больше, чем 3 отзыва, то нужно:
+
+1) в 'line-reviews.scss' удалить 
+@include rm(1024) {
+   .line-reviews .slick-prev, .line-reviews .slick-next {
+      display: none !important;
+   }
+}
+(http://joxi.ru/Y2Lobo7uQgj7vm)
+
+2)  в 'lineReviews.js' свойство 'false' в 'draggable' и 'swipe' 
+заменить на 'true'
+(http://joxi.ru/vAWodo5uqDMqBA)

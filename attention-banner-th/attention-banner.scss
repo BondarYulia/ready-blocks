@@ -1,0 +1,127 @@
+.timer {
+    display: flex;
+    align-items: center;
+  
+    &__title {
+      font-size: 15px;
+      color: rgb(51, 51, 51);
+      line-height: 1.2;
+      margin-right: 7px;
+    }
+  
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__separator {
+      font-size: 19px;
+      font-family: "OpenSans", sans-serif;
+      color: rgba(0, 0, 0, 0.49);
+      margin-right: 4px;
+    }
+  
+    &__box {
+      display: flex;
+    }
+  
+    &__item {
+      color: white;
+      font-size: 24px;
+      font-family: "OpenSans", sans-serif;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      border-radius: 5px;
+      background-color: #a8c13f;
+      padding: 9px 11px;
+      margin-right: 4px;
+  
+      &.last {
+        margin-right: 0;
+      }
+    }
+  }
+
+
+.attention-banner {
+    padding: 20px 0;
+    background-color: red;
+
+    .timer__item {
+        width: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include r(1219) { 
+            width: 35px;
+        }
+    }
+
+    @include r(1219) { 
+        padding: 16px 0;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            line-height: 1.4;   
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+            letter-spacing: 0.5px;
+
+            @include r(1219) {
+                font-size: 19px;
+                letter-spacing: 0px;
+            }
+
+            @include r(767) {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            
+            @include r(639) {
+                font-size: 16px;
+                margin: 0 0 0 15px;
+            }
+    }
+
+    .timer__separator {
+        color: white;
+    }
+}
+
+@include r(1023) {
+    .attention-banner {
+        .timer {
+            max-width: 250px;
+        }
+    }
+}
+
+@include r(639) {
+    .attention-banner {
+        .timer {
+            display: none;
+        }
+    }
+}
+
+@include r(360) {
+    .attention-banner p {
+        font-size: 14px;
+        line-height: 1.3;
+        margin-left: 5px;
+        max-width: 251px;
+    }
+
+    .attention-banner img {
+        max-width: 34px;
+    }
+}

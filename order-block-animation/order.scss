@@ -1,0 +1,296 @@
+.order {
+  padding: 120px 0 124px 0;
+  background-color: #f3f3f3;
+
+  .title {
+    margin-bottom: 85px;
+  }
+
+  .arrows {
+    display: flex;
+    align-items: center;
+    margin-top: -115px;
+
+    .arrow2 {
+      margin-left: 9px;
+      margin-right: 13px;
+    }
+  }
+
+  .arrow {
+    path {
+      fill: #ffffff;
+    }
+
+    &.active {
+      path {
+        fill: orange;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__el {
+    max-width: 310px;
+    width: 100%;
+    position: relative;
+
+    &--1 {
+      margin-top: 35px;
+    }
+
+    &--3 {
+      margin-top: 35px;
+
+
+    }
+
+
+    &--number {
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 25px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+
+    }
+
+
+    &--img {
+      width: 310px;
+      height: 290px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 3px;
+      margin-bottom: 29px;
+    }
+
+    &--2 {
+      .order__el--img {
+        align-items: flex-end;
+      }
+    }
+
+    &--title {
+      font-size: 22px;
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+      line-height: 1.091;
+      text-align: center;
+      margin-bottom: 10px;
+      padding: 0 30px;
+
+    }
+
+    &--descr {
+      font-size: 18px;
+      color: rgb(51, 51, 51);
+      line-height: 1.222;
+      text-align: center;
+      padding: 0 30px;
+    }
+
+    &--2 {
+
+      .order__el--title,
+      .order__el--descr {
+        padding: 0 25px;
+      }
+    }
+
+  }
+
+}
+
+
+@include r(1219) {
+  .order {
+    padding: 90px 0;
+
+    .title {
+      margin-bottom: 70px;
+    }
+    .arrows {
+      .arrow2 {
+        margin-left: 4px;
+        margin-right: 8px;
+      }
+    }
+
+    &__el {
+      max-width: 270px;
+
+      &--img {
+        width: 270px;
+        height: 260px;
+
+        img {
+          max-width: 185px;
+        }
+      }
+
+      &--title {
+        padding: 0 5px;
+
+      }
+
+      &--descr {
+        padding: 0 5px;
+      }
+
+      &--2 {
+
+        .order__el--title,
+        .order__el--descr {
+          padding: 0 5px;
+        }
+      }
+    }
+
+  }
+}
+
+
+@include r(1023) {
+  .order {
+
+    .title {
+        margin-bottom: 40px;
+    }
+    .arrows {
+      display: none;
+    }
+
+    &__wrap {
+        flex-wrap: wrap;
+    }
+
+    &__el {
+      max-width: 230px;
+
+
+      &--img {
+        width: 230px;
+        height: 220px;
+
+        img {
+          max-width: 160px;
+        }
+
+      }
+
+      &--title {
+        padding: 0;
+        font-size: 19px;
+
+      }
+
+      &--descr {
+        padding: 0;
+        font-size: 15px;
+      }
+
+      &--1 {
+        margin-top: 0px;
+      }
+  
+      &--3 {
+        margin-top: 0px;
+        .order__el--img img {
+            max-width: 120px;
+        }
+      }
+
+      &--2 {
+
+        .order__el--title,
+        .order__el--descr {
+          padding: 0;
+        }
+      }
+
+      &--number {
+        top: -20px;
+        left: calc(50% - 20px);
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+  
+      }
+    }
+    
+  }
+
+}
+
+@include r(767) {
+    .order {
+        &__wrap {
+            justify-content: center;
+
+        }
+
+        &__el {
+
+            
+      &--title {
+        font-size: 19px;
+
+      }
+
+            &--img {
+                margin-bottom: 20px;
+            }
+            &--1 {
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            &--2 {
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            &--3 {
+                margin-top: 40px;
+                .order__el--img {
+                    border: 1px solid #ffffff;
+                }
+            }
+        }
+    }
+}
+
+@include r(639) {
+    .order {
+
+
+        &__el {
+            max-width: 100%;  
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &--title {
+                width: 100%;
+            }
+
+            &--2 {
+                margin-top: 40px;
+            }
+        }
+    }
+}

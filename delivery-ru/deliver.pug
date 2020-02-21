@@ -1,0 +1,33 @@
+section.deliver.block.white-block
+  .container
+    .deliver__info
+      .deliver__confid
+        p.deliver__var Доставка почтой или курьером
+        img(src='img/confid.svg', alt='')
+        p.deliver__var--confid Конфиденциальность гарантирована.
+          br
+          | 						Оплата при получении
+      .deliver__operator
+        span.deliver__operator--info
+          img(src='img/operator.svg', alt='')
+          span.deliver__operator--bold.online 42
+          span  оператора онлайн
+        br
+        span.deliver__operator--info.deliver__operator--second
+          img(src='img/operator_speak.svg', alt='')
+          span.deliver__operator--bold.busy 24
+          span  разговаривают
+        p.deliver__time Круглосуточно без выходных — заказывайте!
+    .deliver__block
+      .deliver__images.deliver__images--first
+        span.deliver__images--title Оплата:
+        img(src='img/payments.png', alt='')
+      .deliver__images.deliver__images--second.delivery
+        span.delivery__title Доставка:
+        .delivery__inner
+          .delivery__item
+            img.delivery__icon(src='img/car.png', alt='')
+            span.delivery__label Доставка курьером
+          .delivery__item
+            img.delivery__icon(src='img/post.png', alt='')
+            span.delivery__label Почта России

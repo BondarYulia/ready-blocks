@@ -1,0 +1,255 @@
+.line-reviews {
+   padding: 80px 0;
+
+   .slick-next {
+      right: -65px;
+      width: 60px;
+      height: 60px;
+      background-image: url(../img/arrow.svg);
+    
+      &:before {
+        content: none;
+      }
+    
+      z-index: 10;
+      &:focus {
+       background-image: url(../img/arrow.svg);
+     }
+    
+      &:hover {
+        background-image: url(../img/arrow2.svg);
+      }
+    }
+    
+    .slick-prev {
+      left: -65px;
+      width: 60px;
+      height: 60px;
+      background-image: url(../img/arrow.svg);
+      transform: rotate(180deg) translateY(30px);
+    
+      &:before {
+        content: none;
+      }
+    
+      z-index: 10;
+      &:focus {
+       background-image: url(../img/arrow.svg);
+     }
+    
+      &:hover {
+        background-image: url(../img/arrow2.svg);
+      }
+    }
+
+   .title {
+      margin-bottom: 45px;
+   }
+
+   &__medals {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 130px;
+      margin-bottom: 93px;
+
+      .line {
+         background-color: rgb(217, 215, 215);
+         width: 150px;
+         height: 1px;
+
+      }
+   }
+
+   &__slider {
+
+      img {
+         box-shadow: 0 1px 16px 0 rgba(2, 3, 3, .15);
+         margin: 20px auto;
+         width: 310px;
+      }
+
+      &-wrap {
+         max-width: 88%;
+         margin-left: auto;
+         margin-right: auto;
+      }
+   }
+}
+
+.line-reviews .slick-prev {
+   width: 60px;
+   height: 60px;
+}
+
+.line-reviews .slick-next {
+   width: 60px;
+   height: 60px;
+}
+
+@include r(1219) {
+   .line-reviews__medals {
+
+      margin-bottom: 60px;
+
+      .line {
+         width: 100px;
+      }
+
+      img {
+         max-height: 100px;
+      }
+
+
+   }
+
+   .line-reviews__slider img {
+      max-width: 270px;
+      box-shadow: 0 2px 7px 0 rgba(2,3,3,.15);
+   }
+
+   .line-reviews {
+      padding: 60px 0;
+
+      .container {
+         margin-bottom: -20px;
+      }
+
+      .title {
+         margin-bottom: 20px;
+      }
+
+      .slick-prev, .slick-next  {
+         top: 50%;
+      }
+
+   }
+}
+
+@include r(1023) {
+   .line-reviews {
+      .title {
+         margin-bottom: 15px;
+      }
+
+      .container {
+         margin-bottom: -20px;
+      }
+   }
+   .line-reviews__medals {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 40px;
+   }
+
+   .line-reviews__slider img {
+      max-width: 300px;
+  }
+
+  .line-reviews .slick-prev {
+     left: -45px !important;
+     top: 50% !important;
+  }
+
+  .line-reviews .slick-next {
+     right: -45px !important;
+     top: 50% !important;
+  }
+
+  .line-reviews .slick-next, .line-reviews .slick-prev {
+   width: 50px;
+   height: 50px;
+   background-size: cover;
+}
+}
+
+@include r(767) {
+   .line-reviews__medals img {
+      max-height: 80px;
+  }
+
+  .line-reviews__slider img {
+   max-width: 245px;
+}
+
+.line-reviews .slick-prev {
+   left: -42px !important;
+}
+
+.line-reviews .slick-next {
+   right: -42px !important;
+}
+}
+
+@include r(639) {
+   .line-reviews__medals {
+      margin-bottom: 30px;
+   }
+   .line-reviews__medals .line {
+      width: 50px;
+   }
+
+   .line-reviews .slick-prev {
+      left: 0;
+  }
+
+  .line-reviews .slick-next {
+   right: 0;
+}
+
+.line-reviews__slider img {
+   max-width: 270px;
+}
+.line-reviews .title {
+   margin-bottom: 15px;
+}
+
+.line-reviews .slick-prev {
+   left: 0px !important;
+}
+
+.line-reviews .slick-next {
+   right: 0px !important;
+}
+}
+
+@include r(479) {
+   .line-reviews__medals .line {
+      display: none;
+   }
+
+   .line-reviews__slider-wrap {
+      max-width: 100%;
+   }
+
+   .line-reviews__slider img {
+      max-width: 260px;
+      margin-top: 0;
+    margin-bottom: 45px;
+  }
+
+  .line-reviews .slick-prev {
+     left: 80px !important;
+   top: auto !important;
+   bottom: -45px !important;
+}
+
+.line-reviews .slick-next {
+   right: 80px !important;
+   top: auto !important;
+   bottom: -41px !important;
+}
+
+.line-reviews {
+   .container {
+      margin-bottom: 0px;
+   }
+}
+}
+
+
+@include rm(1024) {
+   .line-reviews .slick-prev, .line-reviews .slick-next {
+      display: none !important;
+   }
+}
