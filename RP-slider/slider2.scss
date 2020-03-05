@@ -1,0 +1,233 @@
+.slider2 {
+  padding: 77px 0;
+  background-image: url(../img/sl2_bg.jpg);
+  background-size: cover;
+
+
+  .slider-second {
+    margin-bottom: 60px;
+
+    @include r(1080) {
+      margin-bottom: 85px;
+    }
+
+    @include r(767) {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include r(479) {
+      max-width: 300px;
+      margin-bottom: 65px;
+    }
+
+    .slick-dots {
+      bottom: -60px;
+      @include r(479) {
+        bottom: -54px;
+      }
+    }
+
+    .slick-prev {
+      left: -35px;
+      background-image: url(../img/arrow-l.png);
+      background-position: 44% center;
+
+      @include r(1270) {
+        left: -15px;
+      }
+
+      @include r(1219) {
+        left: -35px;
+      }
+
+      @include r(1080) {
+        left: 30%;
+      }
+
+      @include r(1023) {
+        left: 25%;
+      }
+
+      @include r(767) {
+        left: 0;
+      }
+    }
+
+    .slick-next {
+      right: -35px;
+      background-image: url(../img/arrow-r.png);
+      background-position: 56% center;
+
+      @include r(1270) {
+        right: -15px;
+      }
+
+      @include r(1219) {
+        right: -35px;
+      }
+
+      @include r(1080) {
+        right: 30%;
+      }
+
+      @include r(1023) {
+        right: 25%;
+      }
+
+      @include r(767) {
+        right: 0;
+      }
+    }
+
+    .slick-next,
+    .slick-prev {
+      position: absolute;
+      top: 43%;
+      z-index: 5;
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      background-size: 17px 28px;
+      background-repeat: no-repeat;
+      font-size: 0 !important;
+      box-shadow: 0px 4px 20px 0px rgba(2, 3, 3, 0.15);
+      transition: .3s;
+
+      @include r(1080) {
+        top: auto;
+        bottom: -32%;
+      }
+
+      @include r(1023) {
+        bottom: -38%;
+        width: 60px;
+        height: 60px;
+      }
+
+      @include r(767) {
+        bottom: -17%;
+      }
+
+      @include r(479) {
+        width: 50px;
+        height: 50px;
+      }
+
+      &:hover {
+        background-color: #f5b700;
+      }
+
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+
+.slider-second .sl2-slide.gray {
+  background-color: #7a7979;
+  color: white;
+  margin-right: 30px;
+
+  @include r(1219) {
+    margin-right: 20px;
+  }
+
+  @include r(767) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.slider-second .sl2-slide span {
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 900;
+
+  @include r(1023) {
+    font-size: 17px;
+  }
+}
+
+.slider-second .sl2-slide.green {
+  background-color: #8fae00;
+  color: white;
+}
+
+.slider-second .sl2-slide p {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 400;
+
+  @include r(1219) {
+    font-size: 19px;
+  }
+
+  @include r(1023) {
+    font-size: 17px;
+  }
+
+  @include r(479) {
+    font-size: 16px;
+  }
+}
+
+.slider-second .sl2-slide .descr {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 17px;
+  @include r(1023) {
+    height: 70px;
+  }
+}
+
+
+.slider-second .line-w {
+  display: inline-block;
+  height: 50px;
+  width: 1.5px;
+  background-color: white;
+  margin: 0 15px;
+
+  @include r(1023) {
+    height: 35px;
+  }
+
+  @include r(479) {
+    height: 30px;
+    margin: 0 10px;
+  }
+}
+
+
+.slider-second .sl2-slide {
+  width: calc(50% - 15px) !important;
+  left: 0 !important;
+
+  @include r(1219) {
+    width: calc(50% - 10px) !important;
+  }
+
+  @include r(767) {
+    width: 400px !important;
+  }
+
+  @include r(479) {
+    width: 300px !important;
+  }
+}
+
+.slider-second .sl2-slide>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-second .sl2-slide img {
+  width: 100%;
+}

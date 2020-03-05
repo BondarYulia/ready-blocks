@@ -1,0 +1,223 @@
+.reviews-block {
+    padding: 100px 0;
+
+    .title {
+        margin-bottom: 40px;
+
+        
+    @include r(1219) {
+        margin-bottom: 35px;
+      }
+    
+      @include r(1023) {
+        margin-bottom: 30px;
+      }
+    
+      @include r(767) {
+        margin-bottom: 25px;
+      }
+    
+      @include r(639) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .container {
+        padding: 0 85px;
+
+        @include r(1023) {
+            padding: 0 10px;
+          }
+    }
+}
+
+.reviews {
+    height: 480px;
+    overflow-y: scroll;
+    @include r(1219) {
+        height: 400px;
+    }
+
+    @include r(1023) {
+        height: auto;
+        overflow-y: visible;
+        overflow-x: visible;
+    }
+}
+
+.reviews::-webkit-scrollbar {
+    margin-left: 20px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}
+
+.reviews::-webkit-scrollbar-button {
+    background-repeat: no-repeat;
+    height: 0;
+    cursor: pointer;
+}
+
+.reviews::-webkit-scrollbar-track {
+    background-color: #eff0f3;
+    cursor: pointer;
+}
+
+.reviews::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: #fecd24;
+    cursor: pointer;
+    background-image: url(../img/scroll.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.reviews::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(223, 186, 21);
+    cursor: pointer;
+}
+
+.reviews::-webkit-scrollbar-thumb:active {
+    background-color: rgb(179, 149, 19);
+    cursor: pointer;
+}
+
+.reviews::-webkit-resizer {
+    background-repeat: no-repeat;
+    height: 0;
+    cursor: pointer;
+}
+
+.reviews::-webkit-scrollbar {
+    width: 9px;
+    cursor: pointer;
+}
+
+@-moz-document url-prefix() {
+
+    .reviews {
+        scrollbar-width: thin;
+        scrollbar-color: #fecd24 #eff0f3;
+    }
+
+}
+
+.rev {
+    display: flex;
+   
+
+    &:not(:last-child) {
+         margin-bottom: 30px;
+
+         @include r(767) {
+             margin-bottom: 20px;
+         }
+    }
+}
+
+.rev_ava {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+
+    @include r(767) {
+        margin-right: 15px;
+        width: 50px;
+    height: 50px;
+    }
+}
+
+.rev_comment {
+    width: calc(100% - 150px);
+    display: flex;
+    flex-wrap: wrap;
+
+    @include r(1023) {
+        width: calc(100% - 97px);
+    }
+
+    @include r(767) {
+        width: calc(100% - 70px);
+    }
+}
+
+.rev_comment .like,
+.rev_comment .reply {
+    font-size: 14px;
+    color: rgb(72, 109, 169);
+}
+
+.rev_comment .like {
+    margin-left: 15px;
+}
+
+
+.rev_comment .time,
+.rev_comment .dot {
+    font-size: 14px;
+    color: #666;
+}
+
+.rev_text {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(239, 240, 243);
+    padding: 13px 80px 13px 15px;
+    position: relative;
+    margin-bottom: 12px;
+
+    @include r(1023) {
+        padding: 15px 30px 15px 15px;
+    }
+}
+
+.rev_name {
+    font-size: 18px;
+    color: rgb(72, 109, 169);
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+
+    @include r(767) {
+        font-size: 16px;
+        margin-right: 6px;
+    }
+}
+
+.rev_message {
+    font-size: 15px;
+    color: rgb(34, 34, 34);
+    display: inline;
+    line-height: 1.5;
+
+}
+
+.all_likes {
+    position: absolute;
+    right: -6px;
+    bottom: -17px;
+
+    img {
+        height: 32px;
+    }
+}
+
+.all_likes span {
+    color: #aaa;
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+@include r(350) {
+    .rev_text {
+        margin-bottom: 16px;
+    }
+
+    .rev:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}

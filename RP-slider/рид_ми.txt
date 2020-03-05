@@ -1,0 +1,2 @@
+Нужно проверить наличие подключенных 
+'slick.scss', 'slick-theme.scss' и 'slick.js'.
